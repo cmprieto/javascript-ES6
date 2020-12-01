@@ -90,6 +90,33 @@
 
     let greet = (who) => console.log("Hello " + who);
     greet("Pepe");
-    
+
+    // EJERCICIO 3 ; Arregla el error en el siguiente bloque de código
+/* 
+    users.map(function (user) {
+      user.firstName;
+    });
+
+    var users = [
+      { firstName: "Homer", lastName: "Simpson" },
+      { firstName: "Marge", lastName: "Simpson" },
+      { firstName: "Bart", lastName: "Simpson" },
+      { firstName: "Lisa", lastName: "Simpson" },
+      { firstName: "Maggie", lastName: "Simpson" },
+    ];
+ */
+ // PRIMERO HAY QUE DECLARAR LA VARIABLE USERS PARA PODERLA USAR 
+
+    var users = [
+      { firstName: "Homer", lastName: "Simpson" },
+      { firstName: "Marge", lastName: "Simpson" },
+      { firstName: "Bart", lastName: "Simpson" },
+      { firstName: "Lisa", lastName: "Simpson" },
+      { firstName: "Maggie", lastName: "Simpson" },
+    ];
+
+    users.map(function (user) {
+      console.log(user.firstName); // AÑADO CONSOLE PARA VER VALOR POR CONSOLA PERO NO SERIA NECESARIO
+    });
   </script>
 </html>
