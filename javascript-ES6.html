@@ -11,37 +11,35 @@
 
   <script>
     /* EJERCICIO 5
-    Crear una funció que accepti un string i retornada aquest string revertit. Nota: Usar funció fletxa (arrow functions), l'operador de prograpación (spread operator) y el mètode .reverse()*/
+Crear una funció que accepti un string i retornada aquest string revertit. Nota: Usar funció fletxa (arrow functions), l'operador de prograpación (spread operator) y el mètode .reverse()*/
 
     /* function girar(palabra){ ES5*/
 
     /*  let girar = (palabra) => {
-          let array = [...palabra]; //STRING A ARRAY
-          let yarra = array.reverse(); //INVIERTE VALOR ELEMENTOS DEL ARRAY
-          let invert = yarra.join(""); // PASA ARRAY A STRING
-          return invert;
-        };
-        let palabra = prompt(
-          "Escribe una palabra o frase y el sistema te devuelve la palabra girada"
-        );
-        let invertir = girar(palabra);
-        console.log(invertir); */
-
+      let array = [...palabra]; //STRING A ARRAY
+      let yarra = array.reverse(); //INVIERTE VALOR ELEMENTOS DEL ARRAY
+      let invert = yarra.join(""); // PASA ARRAY A STRING
+      return invert;
+    };
+    let palabra = prompt(
+      "Escribe una palabra o frase y el sistema te devuelve la palabra girada"
+    );
+    let invertir = girar(palabra);
+    console.log(invertir);
+ */
     /*EJERCICIO 6
-    Reemplaça en el següent bloc de codi la promesa per async/await:
-    */
-    /* function b() {
-       //...
-    }
+Reemplaça en el següent bloc de codi la promesa per aync/await:
 
-    function a() {
-       b().then()=>{
-       doMoreWork();
-       }
-    } */
+function b() {
+   // ...
+}
 
-    // async/await
-
+funtion a() {
+   b().then() = > {
+   doMoreWork();
+   }
+} */
+    /* 
     function b() {
       //...
     }
@@ -51,6 +49,39 @@
       () => {
         doMoreWork();
       };
-    }
+    } */
+
+    /* EJERCICIO 7
+Tenim un array de tasques i volem aconseguir un array que contingui únicament els noms de les tasques. 
+- Usar .forEach() per obtenir aquest array.
+- Usar .map() per obtenir aquest array.  */
+
+    var tasks = [
+      {
+        name: "Start React web",
+        duration: 120,
+      },
+      {
+        name: "Work out",
+        duration: 60,
+      },
+      {
+        name: "Procrastinate on facebook",
+        duration: 240,
+      },
+    ];
+
+    // USO DE .forEach()
+
+    let taskNames = new Array();
+    tasks.forEach(function (task) {
+      taskNames.push(task.name);
+    });
+    console.log(taskNames);
+
+    // USO DE .map()
+
+    let arrayNames = tasks.map((item) => item.name);
+    console.log(arrayNames);
   </script>
 </html>
