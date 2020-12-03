@@ -10,21 +10,47 @@
   </body>
 
   <script>
-/* EJERCICIO 5
-Crear una funció que accepti un string i retornada aquest string revertit. Nota: Usar funció fletxa (arrow functions), l'operador de prograpación (spread operator) y el mètode .reverse()*/
+    /* EJERCICIO 5
+    Crear una funció que accepti un string i retornada aquest string revertit. Nota: Usar funció fletxa (arrow functions), l'operador de prograpación (spread operator) y el mètode .reverse()*/
 
     /* function girar(palabra){ ES5*/
 
-    let girar = (palabra) => {
-      let array = [...palabra]; //STRING A ARRAY
-      let yarra = array.reverse(); //INVIERTE VALOR ELEMENTOS DEL ARRAY
-      let invert = yarra.join(""); // PASA ARRAY A STRING
-      return invert;
-    };
-    let palabra = prompt(
-      "Escribe una palabra o frase y el sistema te devuelve la palabra girada"
-    );
-    let invertir = girar(palabra);
-    console.log(invertir);
+    /*  let girar = (palabra) => {
+          let array = [...palabra]; //STRING A ARRAY
+          let yarra = array.reverse(); //INVIERTE VALOR ELEMENTOS DEL ARRAY
+          let invert = yarra.join(""); // PASA ARRAY A STRING
+          return invert;
+        };
+        let palabra = prompt(
+          "Escribe una palabra o frase y el sistema te devuelve la palabra girada"
+        );
+        let invertir = girar(palabra);
+        console.log(invertir); */
+
+    /*EJERCICIO 6
+    Reemplaça en el següent bloc de codi la promesa per async/await:
+    */
+    /* function b() {
+       //...
+    }
+
+    function a() {
+       b().then()=>{
+       doMoreWork();
+       }
+    } */
+
+    // async/await
+
+    function b() {
+      //...
+    }
+
+    async function a() {
+      await b();
+      () => {
+        doMoreWork();
+      };
+    }
   </script>
 </html>
